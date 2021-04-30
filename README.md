@@ -1,4 +1,4 @@
-# ddmyvim
+# myvim
 my vim configuration
 
 ## Installation
