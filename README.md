@@ -6,7 +6,7 @@ my vim configuration
 - Clone the package into the following directory(create .vim if necessary).
 
         cd ~/.vim/
-        git clone https://github.com/liver121888/myvim
+        git clone https://github.com/liver121888/.vim
 
 - extract .vimrc file to root directory
 
