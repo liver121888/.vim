@@ -1,6 +1,7 @@
 scriptencoding utf-8
 set encoding=utf8
-
+" an test area with tab and sapce
+"	        
 
 "Vundle
 set nocompatible              " be iMproved, required
@@ -9,7 +10,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
