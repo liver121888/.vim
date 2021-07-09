@@ -1,5 +1,5 @@
-# myvim
-my vim configuration
+# My vim
+My vim configuration
 
 ## Installation
 
