@@ -20,6 +20,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -36,10 +37,10 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-" for airline
+" for airline-show tabline
 let g:airline#extensions#tabline#enabled = 1
 
-" for paper color
+" for paper color-color overide and highlight syntax
 let g:airline_theme='papercolor'
 let g:PaperColor_Theme_Options = {
   \   'theme': {
@@ -69,8 +70,18 @@ set t_Co=256   " This is may or may not needed.
 set background=light
 colorscheme PaperColor
 
+" Vim-fugitive-show git branch
+set ttimeoutlen=50
+let g:airline_theme = 'powerlineish'
+let g:airline#extensions#hunks#enabled=0
+let g:airline#extensions#branch#enabled=1
 
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
+" Other configuration
 set nu
 set laststatus=2
 set cursorline
