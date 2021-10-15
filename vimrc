@@ -70,7 +70,7 @@ set t_Co=256   " This is may or may not needed.
 set background=light
 colorscheme PaperColor
 
-" Vim-fugitive-show git branch
+" Vim-figitive-show git branch
 set ttimeoutlen=50
 let g:airline_theme = 'powerlineish'
 let g:airline#extensions#hunks#enabled=0
@@ -89,3 +89,7 @@ set tabstop=8
 set shiftwidth=8
 set list
 set listchars=tab:>-,space:·
+vmap <C-c> "+y
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
