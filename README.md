@@ -8,12 +8,12 @@ My vim configuration
         cd ~
         git clone https://github.com/liver121888/.vim
         
-- init submodule vundle.
+- Init submodule vundle.
 
         cd ~/.vim
         git submodule init
         git submodule update
         
-- extract .vimrc file to root directory
+- Prerequsites
 
-        cp ~/.vim/.vimrc ~/
+        sudo apt install vim-gtk3
