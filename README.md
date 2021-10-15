@@ -14,6 +14,6 @@ My vim configuration
         git submodule init
         git submodule update
         
-- Prerequsites
+## Prerequsites
 
         sudo apt install vim-gtk3
