@@ -8,7 +8,7 @@ My vim configuration
         cd ~
         git clone https://github.com/liver121888/.vim
         
-- Init submodules.
+- Install submodules.
 
         cd ~/.vim
         git submodule init
