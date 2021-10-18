@@ -64,24 +64,23 @@ let g:PaperColor_Theme_Options = {
   \ }
 
 
-" Color configuration
-" PaperColor setting
-set t_Co=256   " This is may or may not needed.
+" color configuration
+" paperColor setting
+set t_Co=256
 set background=light
 colorscheme PaperColor
 
-" Vim-figitive-show git branch
+" Let vim-figitive-show git branch.
 set ttimeoutlen=50
 let g:airline_theme = 'powerlineish'
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
-
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
 
-" Other configuration
+" other configuration
 set nu
 set laststatus=2
 set cursorline
@@ -89,7 +88,24 @@ set tabstop=8
 set shiftwidth=8
 set list
 set listchars=tab:>-,space:·
+
+" clipboard mapping (vim-gtk3 required)
 vmap <C-c> "+y
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
+
+" netrw setup
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 1
+let g:netrw_altv = 1
+let g:netrw_preview = 1
+let g:netrw_alto = 1
+let g:netrw_winsize = 15
+let g:netrw_dirhistmax = 0
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore!
+  autocmd VimEnter * wincmd w
+augroup END
