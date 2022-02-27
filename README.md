@@ -1,6 +1,8 @@
 # My vim
 My vim configuration
 
+Small Demo: https://youtu.be/qltwrFCoZyE
+
 ## Installation
 
 - Clone the package into the following directory(create .vim if necessary).
