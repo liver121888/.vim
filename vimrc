@@ -92,7 +92,7 @@ set listchars=tab:>-,space:·
 " clipboard mapping (vim-gtk3 required)
 vmap <C-c> "+y
 vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
+vmap <C-v> <ESC>"+P
 imap <C-v> <ESC>"+pa
 
 " netrw setup
