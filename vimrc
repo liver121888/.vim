@@ -92,8 +92,8 @@ set listchars=tab:>-,space:·
 " clipboard mapping (vim-gtk3 required)
 vmap <C-c> "+y
 vmap <C-x> "+c
-vmap <C-v> <ESC>"+P
-imap <C-v> <ESC>"+pa
+vmap <C-v> <ESC> "+P
+imap <C-v> <ESC>i "+pa
 
 " netrw setup
 let g:netrw_banner = 0
