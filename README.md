@@ -3,6 +3,11 @@ My vim configuration
 
 Small Demo: https://youtu.be/qltwrFCoZyE
 
+## Prerequsites
+
+ - sudo apt install vim-gtk3
+
+
 ## Installation
 
 - Clone the package into the following directory(create .vim if necessary).
@@ -15,7 +20,3 @@ Small Demo: https://youtu.be/qltwrFCoZyE
         cd ~/.vim
         git submodule init
         git submodule update
-        
-## Prerequsites
-
-        sudo apt install vim-gtk3
